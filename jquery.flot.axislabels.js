@@ -434,6 +434,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     if (!opts || !opts.axisLabel || !axis.show)
                         return;
 
+                    axisLabels[axisName].calculateSize();
+
                     axisLabels[axisName].draw(axis.box);
                 });
             }
